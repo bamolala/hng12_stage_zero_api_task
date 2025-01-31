@@ -9,8 +9,8 @@ app.use(cors());
 const PORT = process.env.PORT || 3000;
 
 //Create API endpoint & send JSON response
-app.get("/", (require, respond) => {
-    respond.json({
+app.get("/", (req, res) => {
+    res.json({
         email : "ayostark7@gmail.com",
         current_datetime : new Date().toISOString(),
         github_url : "https://github.com/bamolala/hng12_stage_zero_api_task"
